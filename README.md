@@ -1,6 +1,6 @@
 # Minimum AKA Medium Clone
 
-A simple clone of Medium.com, built as a demo application for job interview purposes. The application is built using modern technologies, and showcases the ability to design, implement and deploy a scalable web application.
+Minimum is a lightweight clone of Medium, built with .NET Core, MongoDB, and React. It allows users to create and manage content, discover new posts, and interact with the community. This repository provides a starting point for building a scalable and modular blogging platform, with emphasis on simplicity and performance.
 
 ## Requirements
 
