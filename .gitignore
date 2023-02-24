@@ -1,0 +1,29 @@
+# Visual Studio files
+.vs/
+bin/
+obj/
+
+# Node.js files
+node_modules/
+
+# .NET Core files
+bin/
+obj/
+
+# Next.js build files
+.next/
+out/
+
+# IDE files
+.idea/
+*.suo
+*.user
+*.sln.ide
+
+# Logs
+*.log
+logs/
+
+# Other
+.DS_Store
+Thumbs.db
