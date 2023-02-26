@@ -1,3 +1,7 @@
+using System.Security.Authentication;
+using System.Xml.Xsl;
+using MongoDB.Driver;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,6 +19,12 @@ builder.Services.AddCors(options =>
         .AllowAnyMethod();
     });
 });
+
+string connectionString = @"mongodb://anhvupt:B9N8DmQ3D4ajsAplKbRGAS3kLrWWSHAI5rT0sx1CjPQasMFnCyTc65X6bduy37JjLcg2qzsIj7i5ACDbX49ovA==@anhvupt.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@anhvupt@";
+MongoClientSettings settings = MongoClientSettings.FromUrl(new MongoUrl(connectionString));
+settings.SslSettings = new SslSettings() { EnabledSslProtocols = SslProtocols.Tls12 };
+var mongoClient = new MongoClient(settings);
+builder.Services.AddSingleton<IMongoClient>(mongoClient);
 
 var app = builder.Build();
 
