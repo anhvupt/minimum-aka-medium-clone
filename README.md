@@ -14,21 +14,8 @@ The following functional requirements were identified for the Minimum AKA Medium
 
 The following non-functional requirements were also identified:
 
-- High availability and scalability
 - Fast load times for both read and write operations
 - Robust security to prevent data breaches and unauthorized access
-- Support for large amounts of data
-
-## Assumptions and Calculations
-
-The following assumptions were made during the design and planning of the application:
-
-- 10 million users in total, with 1 million active users per day
-- Each user posts 2 posts per day, with an average of 1000 words and 3-5 images per post
-- Total storage requirement of 6.5 petabytes per year
-- Required bandwidth of 95 megabytes per second
-- Sharding of MongoDB database for scalability
-- Use of Azure platform for hosting and deployment
 
 ## Tech Stack
 
